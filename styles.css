@@ -5,8 +5,8 @@
   --text: #eaeaea;
   --muted: #b7b7b7;
   --line: #262626;
-  --accent: #ff5a1f;
-  --accent-hover: #e94f18;
+  --accent: #22cfe3;
+  --accent-hover: #18bcd0;
   --card: #171717;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   --radius: 18px;
@@ -454,4 +454,27 @@ p {
   .hero-buttons {
     flex-direction: column;
   }
+}.about-photo-box {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+}.guide-image-box {
+  padding: 0;
+  overflow: hidden;
+  background: #111;
+}
+
+.guide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }

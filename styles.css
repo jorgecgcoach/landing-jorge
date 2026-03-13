@@ -479,3 +479,58 @@ p {
   object-position: center 20%;
   display: block;
 }
+
+.freebie-section {
+  background: #101010;
+}
+
+.freebie-box {
+  background: linear-gradient(135deg, #171717, #101010);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 34px;
+  box-shadow: var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.freebie-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(34, 207, 227, 0.12);
+  border-color: var(--accent);
+}
+
+.freebie-text {
+  max-width: 760px;
+}
+
+.freebie-text h2 {
+  margin-bottom: 14px;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+.product-card,
+.card,
+.feature-card,
+.testimonial,
+.about-box {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.product-card:hover,
+.card:hover,
+.feature-card:hover,
+.testimonial:hover,
+.about-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(34, 207, 227, 0.12);
+  border-color: var(--accent);
+}
+
+.btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 14px 30px rgba(34, 207, 227, 0.25);
+}

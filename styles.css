@@ -564,3 +564,42 @@ p {
   object-fit:cover;
   border-radius:14px;
 }
+
+.testimonial-img{
+  padding:18px;
+  overflow:hidden;
+  transition:0.25s ease;
+}
+
+.testimonial-caption{
+  color:var(--white);
+  font-weight:700;
+  font-size:1rem;
+  line-height:1.35;
+  margin-bottom:14px;
+  min-height:54px;
+}
+
+.testimonial-media{
+  height:420px;
+  background:#0f0f0f;
+  border-radius:14px;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.testimonial-media img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+  background:#0f0f0f;
+}
+
+.testimonial-img:hover{
+  transform:translateY(-6px);
+  border:1px solid var(--accent);
+  box-shadow:0 10px 30px rgba(34,207,227,0.15);
+}

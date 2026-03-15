@@ -565,15 +565,30 @@ p {
   border-radius:14px;
 }
 
-.testimonials-grid-custom {
+/* TESTIMONIOS NUEVA ESTRUCTURA */
+
+.testimonials-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 34px;
+}
+
+.testimonials-grid-bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
   align-items: start;
 }
 
+.testimonial-wide,
 .testimonial-real {
   padding: 18px;
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  height: auto;
 }
 
+.testimonial-wide:hover,
 .testimonial-real:hover {
   transform: translateY(-6px);
   border-color: var(--accent);
@@ -596,15 +611,26 @@ p {
   background: #111;
 }
 
-.testimonial-shot-horizontal {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
+.testimonials-more {
+  text-align: center;
+  color: var(--muted);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 6px;
 }
 
 @media (max-width: 960px) {
+
+  .testimonials-grid-bottom {
+    grid-template-columns: 1fr;
+  }
+
   .testimonial-caption {
     font-size: 0.95rem;
   }
+
+  .testimonials-more {
+    font-size: 1rem;
+  }
+
 }
